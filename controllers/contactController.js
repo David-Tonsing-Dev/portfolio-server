@@ -22,7 +22,7 @@ const contactMail = async (req, res) => {
     nodemailerMailgun.sendMail(
       {
         from: email,
-        to: "sortejanvi11@gmail.com",
+        to: process.env.OWNER_EMAIL,
         subject: `Contact Form Submission from ${name}`,
         text: `Message from ${name} [${email}]:\n\n${message}`,
       },
