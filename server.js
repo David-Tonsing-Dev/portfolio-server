@@ -10,6 +10,6 @@ app.use(cors());
 app.use(express.json());
 app.use("/api", contactRoute);
 
-app.listen(PORT, "192.168.1.7", () => {
+app.listen(PORT, () => {
   console.log(`Listening to PORT: ${PORT}`);
 });
